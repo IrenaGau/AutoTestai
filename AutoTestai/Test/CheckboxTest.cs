@@ -47,7 +47,7 @@ namespace AutoTestai.Test
         {
             page.CheckAllCheckboxes(); //Pridedu jei noriu paleisti tik sita testa duotuoju momentu, kad uzsitikrinciau jog varneles pazymetos
             page.ClickButton();
-            page.VerifyButtonText2();
+            page.VerifyButtonCheckAllText();
         }
     }
 }

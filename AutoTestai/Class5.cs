@@ -28,7 +28,6 @@ namespace AutoTestai
             IWebElement resultElement = driver.FindElement(By.CssSelector ("#primary-detection > div"));
             Assert.IsTrue("Firefox 98 on Windows 10".Equals(resultElement.Text), $"Text is not the same, actual text is {resultElement.Text}");
             
-            //driver.Quit();
         }
         
         [Test]
@@ -41,7 +40,6 @@ namespace AutoTestai
             IWebElement resultElement = driver.FindElement(By.CssSelector("#primary-detection > div"));
             Assert.IsTrue("Chrome 99 on Windows 10".Equals(resultElement.Text), $"Text is not the same, actual text is {resultElement.Text}");
 
-            //driver.Quit();
         }
 
         [Test]
@@ -52,9 +50,8 @@ namespace AutoTestai
             driver.Manage().Window.Maximize();
 
             IWebElement resultElement = driver.FindElement(By.CssSelector("#primary-detection > div"));
-            Assert.IsTrue("Edge 99 on Windows 10".Equals(resultElement.Text), $"Text is not the same, actual text is {resultElement.Text}");
+            Assert.IsTrue("Edge 100 on Windows 10".Equals(resultElement.Text), $"Text is not the same, actual text is {resultElement.Text}");
 
-            //driver.Quit();
         }
 
     }

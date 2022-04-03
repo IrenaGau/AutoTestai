@@ -58,7 +58,7 @@ namespace AutoTestai.Page
             Assert.IsTrue("Success - Check box is checked".Equals(resultElement.Text), $"Text is not the same, actual text is {resultElement.Text}");
         }
 
-        public void VerifyButtonText2() //ND3
+        public void VerifyButtonCheckAllText() //ND3
         {
             Assert.AreEqual("Check All", button.GetAttribute("value"), "Wrong value");
         }
